@@ -1,0 +1,133 @@
+@import url('header.css');
+@import url('footer.css');
+
+
+/* section main */
+
+/* section.main nav {
+margin-top: 15px;
+} */
+section.main nav {
+    margin: -33px 65px;
+}
+section.main {
+    background-image: url('../images/class/fon.png');
+    background-repeat: no-repeat;
+    background-position: -0px -590px;
+    width: 100%;
+}
+section.main img[src='images/FlowerBlue.png'] {
+    position: relative;
+    top:75px;
+    left: 30px;
+}
+section.main h2{
+    color: #4c77eb;
+    font-size: 72px;
+    margin-left: 20%;
+    margin-top: 200px;
+    font-weight: 300;
+}
+section.main p {
+    color: #99aade;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 20%;
+}
+section.main div.main_img {
+    text-align: right;
+    margin-right: 20% ;
+    margin-top: -130px;
+}
+
+/* section.timetable */
+
+section.timetable {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section.timetable div {
+    margin:5px;
+}
+section.timetable p{
+   max-width: 250px;
+}
+section.timetable div p:nth-of-type(1){
+    font-size: 18px;
+    color: #7492ec;
+}
+section.timetable div p:nth-of-type(2),
+section.timetable div p:nth-of-type(3), 
+section.timetable div p:nth-of-type(4){
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    color: #999999;
+}
+section.timetable div p:nth-of-type(5){
+    font-size: 14px;
+    color: #666666;
+    font-family: 'Lato', sans-serif;    
+}
+@media only all and (max-width: 1600px){
+    div.content {
+        margin: 89px 15% 0;
+    }
+}
+
+@media only all and (max-width: 1240px){
+    div.content {
+        margin: 89px 5% 0;
+    }
+    section.main div.main_img {
+        margin-right: 10%;
+    }
+    section.main h2{
+        margin-top:100px;
+    }
+    section.main {
+        background-position: 0 -700px;
+    }
+}
+
+@media only all and (max-width: 991px) {
+    div.content {
+        margin: 60px 10% 0;
+    }
+    section.main h2{
+        margin-top:50px;
+    }
+    section.main {
+        background-position: 0 -750px;
+    }
+    section.timetable {
+        justify-content: space-around;
+    }
+}
+@media only all and (max-width: 715px){
+    section.timetable div img {
+        width: 400px;
+    }
+    section.timetable p{
+        max-width: 450px;
+     }
+     section.main {
+        background-position: 0 -700px;
+    }
+     section.main h2{
+        margin-top:20px;
+    }   
+    section.main div.main_img img {
+        width: 200px;
+    }
+}
+@media only all and (max-width: 470px){
+    section.timetable div img {
+        width: 310px;
+    }
+    section.timetable p{
+        max-width: 300px;
+     }
+}
+

@@ -1,0 +1,497 @@
+@import url(header.css);
+@import url(footer.css);
+/* section main */
+
+section.main {
+  background-image: url('../images/home/home.jpg');
+  background-position: 0 -100px;
+  padding-bottom: 390px;
+}
+
+section.main div.happy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 212px;
+}
+
+section.main div.happy p {
+  margin: 0;
+  color: #4c77eb;
+  font-weight: 300;
+  font-size: 72px;
+  text-transform: capitalize;
+}
+
+section.main div.happy p:nth-child(1) {
+  padding-right: 20%;
+}
+
+section.main div.happy p:nth-child(2) {
+  padding-right: 10%;
+}
+
+/* benefit */
+
+section.benefit {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+section.benefit div.benefit_text {
+  margin-top: -135px;
+}
+
+section.benefit h2 {
+  color: #7492ec;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+section.benefit div.item {
+  display: flex;
+  justify-content: flex-start;
+}
+
+section.benefit h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+section.benefit p {
+  color: #666666;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+section.benefit iframe {
+  margin-top: 38px;
+  margin-left: 10px;
+}
+
+.circle {
+  min-width: 70px;
+  height: 70px;
+  border: 2px solid #7492ec;
+  border-radius: 50%;
+  display: flex;
+  margin: 0 25px;
+}
+
+.circle svg {
+  width: 40px;
+  margin: 0 auto;
+  fill: #7492ec !important;
+}
+
+/* classes */
+
+section.classes {
+  margin-top: 120px;
+  padding: 0 18% 70px;
+  background: url(../images/home/fon/fonClass.png)
+}
+
+section.classes img[src$='flower.png'] {
+  padding-left: 45%;
+}
+
+section.classes h2 {
+  color: #7492ec;
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.slider__item {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.slider__item-container {
+  margin-right: 1%;
+}
+
+.slider__item-container p:nth-of-type(1) {
+  color: #7492ec;
+  font-size: 18px;
+  font-weight: 500;
+  min-height: 54px;
+  max-width: 270px;
+}
+
+.slider__item-container i {
+  color: #7492ec;
+}
+
+.slider__item-container p:nth-of-type(2), .slider__item-container p:nth-of-type(3), .slider__item-container p:nth-of-type(4) {
+  font-size: 13px;
+  font-family: 'Lato', sans-serif;
+  color: #999999;
+}
+
+.slider__item-container p:nth-of-type(5) {
+  max-width: 270px;
+  font-size: 14px;
+  color: #666666;
+  font-family: 'Lato', sans-serif;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__container {
+  overflow: hidden;
+}
+
+.slider__items {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider_disable-transition {
+  transition: none;
+}
+
+/* кнопки влево и вправо */
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #7492ec;
+  text-align: center;
+  height: 50px;
+  transform: translateY(-50%);
+}
+
+.slider__control[data-slide='prev'] {
+  left: -50px;
+}
+
+.slider__control[data-slide='next'] {
+  right: -50px;
+}
+
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control[data-slide='prev']::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%237492ec' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control[data-slide='next']::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%237492ec' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slider__indicators li.active {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* gallery */
+
+section.gallery {
+  text-align: center;
+}
+
+section.gallery h2 {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+section.gallery p {
+  color: #666666;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  margin-top: 26px;
+  margin-bottom: 53px;
+}
+
+section.gallery div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+section.gallery img {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+/* teacher */
+
+section.teacher {
+  margin: 120px 0 0;
+}
+
+section.teacher div.teacher_text {
+  background: url('../images/home/fon/fonTeacher.png'), no-repeat;
+  background-color: rgba(117, 139, 225, 0.5);
+  color: white;
+  text-align: center;
+  padding: 142px 25% 106px;
+}
+
+section.teacher svg {
+  width: 40;
+  fill: white;
+}
+
+section.teacher div.teacher_ava {
+  display: flex;
+  justify-content: flex-start;
+  margin: 30px 5%;
+}
+
+section.teacher div.teacher_ava div {
+  margin-left: 15px;
+}
+
+section.teacher div.teacher_ava img {
+  width: 80px;
+  height: 80px;
+}
+
+section.teacher div.teacher_ava h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+section.teacher div.teacher_ava p {
+  color: #999999;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+section.teacher div.teacher_card {
+  padding: 0 18%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* renewey */
+
+section.reneway {
+  background-image: url(../images/home/fonGirlUp.jpg);
+  background-repeat: no-repeat;
+  padding: 245px 35%;
+}
+
+section.reneway h2 {
+  color: #7492ec;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+section.reneway p {
+  max-width: 473px;
+  color: #8ea2dc;
+  font-family: 'Lato', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 46px;
+}
+
+section.logo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+@media only all and (max-width: 1830px) {
+  section.gallery img {
+    margin: 10px 20px;
+  }
+  section.gallery div {
+    justify-content: space-around;
+  }
+  .slider__item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+@media only all and (max-width: 1400px) {
+  .content {
+    margin: 50px 10% 0;
+  }
+  section.main div.happy p:nth-child(1) {
+    padding-right: 10%;
+  }
+  section.main div.happy p:nth-child(2) {
+    padding-right: 5%;
+  }
+  section.reneway {
+    background-position: -225px 0px;
+    padding: 200px 19%;
+  }
+  section.teacher div.teacher_card {
+    padding: 0 10%;
+  }
+}
+
+@media only all and (max-width: 1300px) {
+  .slider__item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  section.benefit {
+    flex-direction: column;
+  }
+  section.benefit div.benefit_text {
+    margin-top: 30px;
+  }
+  section.classes {
+    margin-top: 60px;
+  }
+  section.benefit div.benefit_offer {
+    text-align: center;
+  }
+  .slider__item-container {
+    padding: 0 auto;
+  }
+  section.main div.happy p:nth-child(1), section.main div.happy p:nth-child(2) {
+    padding-right: 0;
+  }
+  section.reneway {
+    background-position: -375px 0px;
+    padding: 200px 15%;
+  }
+}
+
+@media only all and (max-width: 1150px) {
+  section.main div.happy {
+    align-items: flex-start;
+  }
+  section.main {
+    background-position: -170px -200px;
+    padding-bottom: 290px;
+  }
+  section.benefit {
+    margin-top: 50px;
+  }
+  section.teacher {
+    margin: 50px 0 0;
+  }
+  section.classes h2 {
+    margin-bottom: 40px;
+    margin-top: -40px;
+  }
+  section.gallery div {
+    margin-top: 40px;
+  }
+  section.teacher div.teacher_text {
+    padding: 100px 10% 100px;
+  }
+  section.teacher div.teacher_card {
+    padding: 0 1%;
+  }
+  section.gallery img {
+    margin: 5px 5px;
+  }
+  .content {
+    margin: 50px 5% 0;
+  }
+  section.reneway {
+    background-position: -570px 0px;
+    padding: 200px 10%;
+  }
+  section.classes img[src$='flower.png'] {
+    padding-left: 36%;
+  }
+}
+
+@media only all and (max-width:850px) {
+  section.gallery img:not(:last-child) {
+    max-width: 310px;
+  }
+  section.teacher div.teacher_card {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 0 2%;
+  }
+  section.teacher {
+    margin: 20px 0 0;
+  }
+  section.reneway {
+    background-position: -700px 0px;
+    padding: 150px 5%;
+  }
+  section.classes h2 {
+    margin-bottom: 10px;
+  }
+  section.classes {
+    padding: 0px 5% 0px;
+  }
+}
+  @media only all and (max-width:650px) {
+    section.main {
+      background-image: none;
+      padding-bottom: 0px;
+      background-color: #b8c7f5;
+    }
+    section.main div.happy {
+      align-items: flex-end;
+      margin-top:50px;
+    }
+    section.main div.happy p:nth-child(1) {
+      padding-right: 30%;
+    }
+    section.main div.happy p:nth-child(2) {
+      padding-right: 20%;
+    }
+    section.main div.happy p:nth-child(3) {
+      padding-right: 10%;
+    }
+    section.classes{
+      margin-top:0;
+      padding: 0px 27% 0px;
+    }
+    .slider__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    section.gallery img:last-child {
+     display: none;
+    }
+    section.reneway {
+      background-image:none;
+      text-align: center;
+      padding: 30px 5%;
+      background-color: #cbd4f1;
+    }
+
+      section.reneway p {
+        max-width: 552px;
+    }
+    section.logo {
+          margin-bottom: 30px;
+    }
+    section.logo img:last-child {
+      display:none;
+       }
+       section.classes img[src$='flower.png'] {
+        padding-left: 20%;
+    }
+  }
